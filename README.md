@@ -33,6 +33,8 @@ GNU Stowを使用して、設定ファイルをシンボリックリンクで管
 │   └── .zprezto/                   # Preztoフレームワーク（カスタムモジュール含む）
 ├── homebrew/
 │   └── Brewfile                    # 最小構成（zsh-completions + フォント）
+├── terminal/
+│   └── Iceberg.terminal            # ターミナルプロファイル（Icebergテーマ）
 └── claude/
     └── .claude/
         └── commands/               # Claude Codeカスタムコマンド
@@ -77,7 +79,14 @@ GNU Stowを使用して、設定ファイルをシンボリックリンクで管
    brew bundle install
    ```
 
-5. **設定確認:**
+5. **ターミナルテーマを設定:**
+   ```bash
+   # Terminal.appでIcebergプロファイルをインポート
+   open ~/work-dotfiles/terminal/Iceberg.terminal
+   # ターミナル.app → 環境設定 → プロファイル → Icebergをデフォルトに設定
+   ```
+
+6. **設定確認:**
    ```bash
    # シンボリンクが正しく作成されているか確認
    ls -la ~/ | grep "\->"
