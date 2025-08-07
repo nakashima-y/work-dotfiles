@@ -26,6 +26,3 @@ fi
 # rbenv設定
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# Node.js設定（nodebrew）
-export PATH=$HOME/.nodebrew/current/bin:$PATH
