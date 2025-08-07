@@ -88,11 +88,23 @@ GNU Stowを使用して、設定ファイルをシンボリックリンクで管
    brew bundle install
    ```
 
-5. **ターミナルテーマを設定:**
+5. **ターミナルアプリケーションを設定:**
+   
+   **Terminal.app（従来）の場合:**
    ```bash
    # Terminal.appでIcebergプロファイルをインポート
    open ~/work-dotfiles/terminal/Iceberg.terminal
    # ターミナル.app → 環境設定 → プロファイル → Icebergをデフォルトに設定
+   ```
+   
+   **Ghosttyを使用する場合:**
+   ```bash
+   # Ghosttyをインストール（Homebrewまたは公式サイトから）
+   brew install --cask ghostty
+   
+   # Ghostty設定は既にstowで適用済み
+   # Ghosttyを起動すれば自動的にCatppuccin Mochaテーマが適用される
+   open -a Ghostty
    ```
 
 6. **設定確認:**
@@ -115,6 +127,10 @@ GNU Stowを使用して、設定ファイルをシンボリックリンクで管
   - fasd（ディレクトリ・ファイル高速アクセス）
   - history-substring-search（履歴検索）
 - **利用可能テーマ**: PowerLevel10k、PowerLevel9k、Agnoster、Powerline
+
+### ターミナルアプリケーション
+- **Terminal.app**: Icebergテーマ（青系カラースキーム）
+- **Ghostty**: Catppuccin Mochaテーマ（ダークモード、透明・ブラー効果付き）
 
 ### Homebrew環境自動判定
 Intel MacとApple Silicon Macの両方に対応：
