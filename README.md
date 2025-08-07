@@ -58,10 +58,16 @@ GNU Stowを使用して、設定ファイルをシンボリックリンクで管
    brew install stow
    ```
 
-2. **このリポジトリをクローン:**
+2. **このリポジトリをクローン（サブモジュール込み）:**
    ```bash
+   # Preztoサブモジュール込みでクローン
+   git clone --recursive https://github.com/nakashima-y/work-dotfiles.git ~/work-dotfiles
+   cd ~/work-dotfiles
+   
+   # または、通常クローン後にサブモジュールを取得
    git clone https://github.com/nakashima-y/work-dotfiles.git ~/work-dotfiles
    cd ~/work-dotfiles
+   git submodule update --init --recursive
    ```
 
 3. **設定ファイルを適用（シンボリックリンク作成）:**
