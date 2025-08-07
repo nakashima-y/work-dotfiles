@@ -32,7 +32,7 @@ GNU Stowを使用して、設定ファイルをシンボリックリンクで管
 ├── zprezto/
 │   └── .zprezto/                   # Preztoフレームワーク（カスタムモジュール含む）
 ├── homebrew/
-│   └── .Brewfile                   # 最小構成（zsh-completions + フォント）
+│   └── Brewfile                    # 最小構成（zsh-completions + フォント）
 └── claude/
     └── .claude/
         └── commands/               # Claude Codeカスタムコマンド
