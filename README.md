@@ -35,6 +35,9 @@ GNU Stowを使用して、設定ファイルをシンボリックリンクで管
 │   └── Brewfile                    # 最小構成（zsh-completions + フォント）
 ├── terminal/
 │   └── Iceberg.terminal            # ターミナルプロファイル（Icebergテーマ）
+├── ghostty/
+│   └── Library/Application Support/com.mitchellh.ghostty/
+│       └── config                  # Ghostty設定（Catppuccin Mochaテーマ）
 └── claude/
     └── .claude/
         └── commands/               # Claude Codeカスタムコマンド
@@ -73,7 +76,7 @@ GNU Stowを使用して、設定ファイルをシンボリックリンクで管
 3. **設定ファイルを適用（シンボリックリンク作成）:**
    ```bash
    # すべての設定を適用
-   stow zsh zprezto homebrew claude
+   stow zsh zprezto homebrew claude ghostty
    
    # 結果例:
    # ~/.zshrc -> ~/work-dotfiles/zsh/.zshrc (シンボリンク作成)
